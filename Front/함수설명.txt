@@ -1,0 +1,22 @@
+1. 
+window.addEventListener("mousemove", function(e){
+
+  console.log(e.clientX)
+
+})
+
+document.getElementsByClassName("className")[0]; <- 클래스명 앞에 . 을 빼야합니다. 주의!
+
+- 배열로 넘어오기 때문에 첫번째 요소인 [0]을 선택해줍니다.
+
+document.querySelector(".className");
+
+document.querySelectorAll(".className");
+
+다 가능합니다. 
+
+jQuery 는 이렇게 하면 되죠. 참 간단하기는 합니다 ^^
+
+$(".className");
+
+$(".className").eq(0);

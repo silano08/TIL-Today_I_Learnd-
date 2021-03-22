@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>마우스값 설정</title>
+
+    <style>
+        body {
+            background-color: black;
+            position: relative;
+            cursor: none;
+        }
+
+        h1 {
+            color: aliceblue;
+        }
+
+        .cursor_item{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: rebeccapurple;
+            top:0;
+            left: 0;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            let h1 = document.getElementsByTagName("h1")[0];
+            let cursor_item = document.getElementsByClassName("cursor_item")[0];
+            window.addEventListener("mousemove", mouseFunc, false);
+
+            function mouseFunc(e) {
+                h1.innerHTML = "x:"+e.clientX + " y:"+ e.clientY;
+                cursor_item.style.transform = "translate(" + e.clientX + "px," + e.clientY + "px)";
+                // console.log(e.clientX, e.clientY);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>test</h1>
+    <div class="cursor_item"></div>
+</body>
+
+</html>
