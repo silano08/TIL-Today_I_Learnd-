@@ -29,11 +29,11 @@
                 type: "POST",
                 url: "/api/posts",
                 data: {title:title,username:username,password:password,mainpost:content},
-                success: function (response) {
-                    alert(response["저장되었습니다!"]);
-                    window.location.reload("/home");
+                success: function () {
+                    alert("저장되었습니다!");
                 }
             })
+            window.location.href = "/home";
         }
 
     </script>

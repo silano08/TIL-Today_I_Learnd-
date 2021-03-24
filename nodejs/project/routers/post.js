@@ -5,8 +5,8 @@ const router = express.Router();
 
 router.get("/posts", async (req, res, next) => {
     try {
-        const { username } = req.query;
-        const post = await Posts.find({ username }).sort("-postId");
+        const { _id } = req.query;
+        const post = await Posts.find({ _id }).sort("date");
         res.json({ post: post });
     } catch (err) {
         console.error(err);
@@ -14,9 +14,9 @@ router.get("/posts", async (req, res, next) => {
     }
 });
 
-router.get("/posts/:postId", async (req, res) => {
-    const { username } = req.params;
-    post = await Posts.findOne({ username: username });
+router.get("/posts/:_id", async (req, res) => {
+    const { _id } = req.params;
+    post = await Posts.findOne({ _id: _id });
     res.json({ detail: post });
 });
 
@@ -26,5 +26,6 @@ router.post('/posts', async (req, res) => {
     console.log("sssssssss");
     res.send({ result: "success" });
 });
+
 
 module.exports = router;

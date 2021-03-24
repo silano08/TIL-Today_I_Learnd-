@@ -17,37 +17,56 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <title>부트스트랩 연습하기</title>
+    <title>게시글</title>
+
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const _id = urlParams.get("_id");
+        
+        $(document).ready(function () {
+            get_detail();
+        })
+
+        function get_detail() {
+            $.ajax({
+                type: "GET",
+                url: `/api/posts/${_id}`,
+                data: {},
+                error: function (xhr, status, error) {
+                    if (status == 404) {
+                        alert("존재하지 않는 게시글입니다.");
+                    }
+                    window.location.href = "/posts";
+                },
+                success: function (response) {
+                    let postsDetail = response["detail"];
+                    $("#posttitle").text(postsDetail["title"]);
+                    $("#username").text(postsDetail["username"]);
+                    $("#postdate").text(postsDetail["date"]);
+                    $("#board_content").text(postsDetail["mainpost"]);
+
+                }
+            });
+        }
+    </script>
 </head>
 
 <body>
     <article>
-
         <div class="container" role="main">
-
-            <h2>board Content</h2>
-
-
-
+            <h2 id="posttitle">board Content</h2>
             <div class="bg-white rounded shadow-sm">
-
-                <div class="board_title">
-                    <c:out value="${boardContent.title}" />
+                <div class="board_title" id="username">
+                    dd
                 </div>
 
-                <div class="board_info_box">
-
-                    <span class="board_author">
-                        <c:out value="${boardContent.reg_id}" />,
-                    </span><span class="board_date">
-                        <c:out value="${boardContent.reg_dt}" />
-                    </span>
-
+                <div class="board_info_box" id="postdate">
+                    <span class="board_author">dd</span>
+                    <span class="board_date">dd</span>
                 </div>
-
-                <div class="board_content">${boardContent.content}</div>
+                <div class="board_content" id="board_content">dd</div>
             </div>
-
 
 
             <div style="margin-top : 20px">
