@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <title>게시판</title>
+
+    <script>
+        $(document).ready(function () {
+            get_posts();
+        })
+
+        function get_posts(postId) {
+            $("#postList").empty()
+            console.log(postId)
+            $.ajax({
+                type: "GET",
+                url: `/api/posts${postId ? "?postId=" + postId : ""}`,
+                data: {},
+                success: function (response) {
+                    let post = response["post"]
+                    for (let i = 0; i < post.length; i++) {
+                        make_card(post[i])
+
+                    }
+                }
+            })
+        }
+
+        function make_card(item) {
+            let htmlTemp = `<tbody>
+                <tr>
+                    <th scope="row">${item["title"]}</th>
+                    <td>${item["username"]}</td>
+                    <td>${item["date"]}</td>
+                </tr>
+            </tbody>`
+            $("#postList").append(htmlTemp)
+        }
+
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">과제용 블로그</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
+            aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown03">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+
+            <form class="form-inline my-2 my-md-0">
+
+                <input class="form-control" type="text" placeholder="Search">
+
+            </form>
+
+        </div>
+
+    </nav>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">제목</th>
+                <th scope="col">작성자명</th>
+                <th scope="col">날짜</th>
+            </tr>
+        </thead>
+    </table>
+    <table id="postList" class="table">
+        <tbody>
+            <tr>
+                <th scope="row">제목</th>
+                <td>작성자</td>
+                <td>O8/31</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+                <th scope="row">제목2</th>
+                <td>작성자2</td>
+                <td>O8/31</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
