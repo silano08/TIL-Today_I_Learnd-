@@ -23,7 +23,7 @@
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
         const _id = urlParams.get("_id");
-        
+
         $(document).ready(function () {
             get_detail();
         })
@@ -45,10 +45,18 @@
                     $("#username").text(postsDetail["username"]);
                     $("#postdate").text(postsDetail["date"]);
                     $("#board_content").text(postsDetail["mainpost"]);
-
                 }
             });
         }
+
+        function edit(item){
+            window.location.href = `/edit?_id=${_id}`;
+        }
+
+        function home(){
+            window.location.href = "/home";
+        }
+
     </script>
 </head>
 
@@ -58,23 +66,21 @@
             <h2 id="posttitle">board Content</h2>
             <div class="bg-white rounded shadow-sm">
                 <div class="board_title" id="username">
-                    dd
+                    정상적인
                 </div>
 
                 <div class="board_info_box" id="postdate">
-                    <span class="board_author">dd</span>
-                    <span class="board_date">dd</span>
+                    <span class="board_author">루트로</span>
+                    <span class="board_date">들어와주시길</span>
                 </div>
-                <div class="board_content" id="board_content">dd</div>
+                <div class="board_content" id="board_content">바랍니다ㅎㅎ</div>
             </div>
 
 
             <div style="margin-top : 20px">
 
-                <button type="button" class="btn btn-sm btn-primary" id="btnUpdate">수정</button>
-
-                <button type="button" class="btn btn-sm btn-primary" id="btnDelete">삭제</button>
-                <button type="button" class="btn btn-sm btn-primary" id="btnList">목록</button>
+                <button type="button" class="btn btn-sm btn-primary" id="btnUpdate" onclick="edit()">수정</button>
+                <button type="button" class="btn btn-sm btn-primary" id="btnList" onclick="home()">목록</button>
 
             </div>
 

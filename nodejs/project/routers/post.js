@@ -27,5 +27,27 @@ router.post('/posts', async (req, res) => {
     res.send({ result: "success" });
 });
 
+router.delete("/posts/:_id/edit",async(req,res) =>{
+    console.log(req.params);
+    const{_id} = req.params;
+    const post = await Posts.find({_id});
+    if (post.length >0){
+      await Posts.deleteOne({_id});
+    }
+    res.send({result:"success"});
+  })
+  
+
+router.patch("/posts/:_id/edit", async (req, res) => {
+    const { _id } = req.params;
+    const { username,title,mainpost } = req.body;
+  
+    isPost = await Posts.find({ _id });
+    if (isPost.length) {
+      await Posts.updateOne({ _id }, { $set: { username,title,mainpost } });
+    }
+  
+    res.send({ result: "success" });
+  })
 
 module.exports = router;

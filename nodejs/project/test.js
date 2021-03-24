@@ -1,49 +1,70 @@
-
-app.get('/mongodb', async (req, res) => {
-    await mongoose.connect('"mongodb://localhost:27017/postpro', {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-        useFindAndModify: true,
-        useCreateIndex: true
-    });
-
-
-    const { Schema } = mongoose;
-    const postSchema = new Schema({
-        postId: {
-            type: Number,
-            required: true,
-            unique: true
-        },
-        username: {
-            type: String,
-            required: true
-        },
-        title: {
-            type: String,
-            required: true
-        },
-        date: {
-            type: Date,
-            default: Date.now
-        },
-        password: {
-            type: Number
-        },
-        mainpost: {
-            type: String
+function passveri() {
+    $.ajax({
+        type: "GET",
+        url: `/api/posts/${_id}`,
+        data: {},
+        success: function (response) {
+            let postsDetail = response["detail"];
+            const testpass = $("#password").val();
+            const trainpass = postsDetail["password"];
+            if (testpass == trainpass) {
+                console.log(true);
+            } else { console.log(false); }
         }
     });
+}
+if (passveri()) {
+    console.log("okay");
+} else { console.log("NO"); }
 
-    let Posts = mongoose.model("post", postSchema);
-
-    await Posts.create({
-        postId: 1,
-        username: "긍긍",
-        title: "test no 1",
-        password: "0000",
-        mainpost: "게시글이 들어갈 자리입니다 으뱌뱌뱥"
+function postdelete() {
+    $.ajax({
+        type: "DELETE",
+        url: `/api/posts/${_id}/edit`,
+        data: {},
+        success: function (response) {
+            let postsDetail = response["detail"];
+            const testpass = $("#password").val();
+            const trainpass = postsDetail["password"];
+            if (testpass==trainpass) {
+                if (response["result"] == "success") {
+                    alert("삭제되었습니다");
+                    window.location.href = "/home";
+                }
+            }
+        }
     });
+}
 
-    res.send('ok');
-})
+///이게 원래꺼
+function postdelete() {
+    console.log(_id);
+    $.ajax({
+        type: "DELETE",
+        url: `/api/posts/${_id}/edit`,
+        data: {},
+        success: function (response) {
+            if (response["result"] == "success") {
+                alert("삭제되었습니다");
+                window.location.href = "/home";
+            }
+        }
+    });
+}
+
+
+function passveri() {
+    $.ajax({
+        type: "GET",
+        url: `/api/posts/${_id}`,
+        data: {},
+        success: function (response) {
+            let postsDetail = response["detail"];
+            console.log(postsDetail);
+            const testpass = $("#password").val();
+            const trainpass = postsDetail["password"];
+            console.log(testpass == trainpass);
+            console.log(testpass, trainpass);
+        }
+    });
+}

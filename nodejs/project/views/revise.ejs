@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -16,63 +17,110 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <title>부트스트랩 연습하기</title>
+    <title>상세페이지 수정</title>
+
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const _id = urlParams.get("_id");
+
+        $(document).ready(function () {
+            get_detail();
+        })
+
+        function get_detail() {
+            $.ajax({
+                type: "GET",
+                url: `/api/posts/${_id}`,
+                data: {},
+                error: function (xhr, status, error) {
+                    if (status == 404) {
+                        alert("존재하지 않는 게시글입니다.");
+                    }
+                    window.location.href = "/posts";
+                },
+                success: function (response) {
+                    alert("불러왔습니다");
+                    let postsDetail = response["detail"];
+                    $("#title").text(postsDetail["title"]);
+                    $("#reg_id").text(postsDetail["username"]);
+                    $("#content").text(postsDetail["mainpost"]);
+                }
+            });
+        }
+
+        function postdelete() {
+            console.log(_id);
+            $.ajax({
+                type: "DELETE",
+                url: `/api/posts/${_id}/edit`,
+                data: {},
+                success: function (response) {
+                    if (response["result"] == "success") {
+                        alert("삭제되었습니다");
+                        window.location.href = "/home";
+                    }
+                }
+            });
+        }
+
+
+        function edit() {
+            $.ajax({
+                type: "PATCH",
+                url: `/api/posts/${_id}/edit`,
+                data: {
+                    username: $("#reg_id").val(),
+                    title: $("#title").val(),
+                    mainpost: $("#content").val()
+                },
+                success: function (response) {
+                    if (response["result"] == "success") {
+                        alert("수정되었습니다");
+                        window.location.href = "/home";
+                    }
+                }
+            });
+        }
+
+    </script>
 </head>
+
 <body>
     <article>
-
         <div class="container" role="main">
-
             <h2>board Form</h2>
-
             <form name="form" id="form" role="form" method="post"
                 action="${pageContext.request.contextPath}/board/saveBoard">
-
                 <div class="mb-3">
-
                     <label for="title">제목</label>
-
-                    <input type="text" class="form-control" name="title" id="title" placeholder="제목을 입력해 주세요">
-
+                    <textarea type="text" class="form-control" name="title" id="title"
+                        placeholder="제목을 입력해 주세요"></textarea>
                 </div>
-
-
-
                 <div class="mb-3">
-
                     <label for="reg_id">작성자</label>
-
-                    <input type="text" class="form-control" name="reg_id" id="reg_id" placeholder="이름을 입력해 주세요">
-
+                    <textarea type="text" class="form-control" name="reg_id" id="reg_id"
+                        placeholder="이름을 입력해 주세요"></textarea>
                 </div>
-
-
-
                 <div class="mb-3">
-
                     <label for="content">내용</label>
-
                     <textarea class="form-control" rows="5" name="content" id="content"
                         placeholder="내용을 입력해 주세요"></textarea>
-
                 </div>
-
-
-
-
+                <div class="mb-3">
+                    <label for="password">비밀번호</label>
+                    <textarea type="text" class="form-control" name="password" id="password"
+                        placeholder="비밀번호를 입력해 주세요"></textarea>
+                </div>
             </form>
-
             <div>
 
-                <button type="button" class="btn btn-sm btn-primary" id="btnSave">삭제</button>
-
-                <button type="button" class="btn btn-sm btn-primary" id="btnList">수정</button>
-
+                <button type="button" class="btn btn-sm btn-primary" id="btnDelete" onclick="postdelete()">삭제</button>
+                <button type="button" class="btn btn-sm btn-primary" id="btnList" onclick="edit()">수정</button>
             </div>
-
         </div>
-
     </article>
 
 </body>
+
 </html>
