@@ -20,11 +20,22 @@
     <title>글 작성하기</title>
 
     <script>
-
-        function upload(){
-
+        function upload() {
+            let title = $('#title').val()
+            let username = $('#reg_id').val()
+            let content = $('#content').val()
+            let password = $('#password').val()
+            $.ajax({
+                type: "POST",
+                url: "/api/posts",
+                data: {title:title,username:username,password:password,mainpost:content},
+                success: function (response) {
+                    alert(response["저장되었습니다!"]);
+                    window.location.reload("/home");
+                }
+            })
         }
-        
+
     </script>
 </head>
 
@@ -48,7 +59,7 @@
                         placeholder="내용을 입력해 주세요"></textarea>
                 </div>
                 <div class="mb-3">
-                    <label for="title">비밀번호</label>
+                    <label for="password">비밀번호</label>
                     <input type="text" class="form-control" name="password" id="password" placeholder="비밀번호를 입력해 주세요">
                 </div>
             </form>

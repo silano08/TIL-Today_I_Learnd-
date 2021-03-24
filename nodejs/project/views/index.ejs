@@ -24,12 +24,12 @@
             get_posts();
         })
 
-        function get_posts(postId) {
+        function get_posts(username) {
             $("#postList").empty()
-            console.log(postId)
+            console.log(username)
             $.ajax({
                 type: "GET",
-                url: `/api/posts${postId ? "?postId=" + postId : ""}`,
+                url: `/api/posts${username ? "?username=" + username : ""}`,
                 data: {},
                 success: function (response) {
                     let post = response["post"]
