@@ -49,6 +49,44 @@
             });
         }
 
+        function passveri() {
+            $.ajax({
+                type: "GET",
+                url: `/api/posts/${_id}`,
+                data: {},
+                success: function (response) {
+                    let postsDetail = response["detail"];
+                    console.log(postsDetail);
+                    const testpass = $("#password").val();
+                    const trainpass = postsDetail["password"];
+                    if (testpass == trainpass) {
+                        postdelete()
+                        alert("삭제되었습니다");
+                        window.location.href = "/home";
+                    } else { alert("비밀번호를 확인해주세요"); }
+                }
+            });
+        }
+
+        function passveri2() {
+            $.ajax({
+                type: "GET",
+                url: `/api/posts/${_id}`,
+                data: {},
+                success: function (response) {
+                    let postsDetail = response["detail"];
+                    console.log(postsDetail);
+                    const testpass = $("#password").val();
+                    const trainpass = postsDetail["password"];
+                    if (testpass == trainpass) {
+                        edit()
+                        alert("수정되었습니다");
+                        window.location.href = "/home";
+                    } else { alert("비밀번호를 확인해주세요"); }
+                }
+            });
+        }
+
         function postdelete() {
             console.log(_id);
             $.ajax({
@@ -57,7 +95,6 @@
                 data: {},
                 success: function (response) {
                     if (response["result"] == "success") {
-                        alert("삭제되었습니다");
                         window.location.href = "/home";
                     }
                 }
@@ -75,8 +112,8 @@
                     mainpost: $("#content").val()
                 },
                 success: function (response) {
+                    console.log(response["detail"]);
                     if (response["result"] == "success") {
-                        alert("수정되었습니다");
                         window.location.href = "/home";
                     }
                 }
@@ -115,8 +152,8 @@
             </form>
             <div>
 
-                <button type="button" class="btn btn-sm btn-primary" id="btnDelete" onclick="postdelete()">삭제</button>
-                <button type="button" class="btn btn-sm btn-primary" id="btnList" onclick="edit()">수정</button>
+                <button type="button" class="btn btn-sm btn-primary" id="btnDelete" onclick="passveri()">삭제</button>
+                <button type="button" class="btn btn-sm btn-primary" id="btnList" onclick="passveri2()">수정</button>
             </div>
         </div>
     </article>

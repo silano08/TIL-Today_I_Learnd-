@@ -26,7 +26,7 @@ function postdelete() {
             let postsDetail = response["detail"];
             const testpass = $("#password").val();
             const trainpass = postsDetail["password"];
-            if (testpass==trainpass) {
+            if (testpass == trainpass) {
                 if (response["result"] == "success") {
                     alert("삭제되었습니다");
                     window.location.href = "/home";
@@ -38,7 +38,20 @@ function postdelete() {
 
 ///이게 원래꺼
 function postdelete() {
-    console.log(_id);
+    $.ajax({
+        type: "GET",
+        url: `/api/posts/${_id}`,
+        data: {},
+        success: function (response) {
+            let postsDetail = response["detail"];
+            console.log(postsDetail);
+            const testpass = $("#password").val();
+            const trainpass = postsDetail["password"];
+            console.log(testpass == trainpass);
+            console.log(testpass, trainpass);
+        }
+    });
+    
     $.ajax({
         type: "DELETE",
         url: `/api/posts/${_id}/edit`,
