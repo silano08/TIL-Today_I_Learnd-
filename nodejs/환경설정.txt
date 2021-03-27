@@ -12,6 +12,9 @@ npm install express < 위의걸로 인해 json파일 생기고 express설치
 3) 한글 깨짐 방지! ⇒ iconv-lite
 npm install axios cheerio iconv-lite -s
 
+5.로그인되는 쇼핑몰
+mongoose,jsonwebtoken,express
+
 ############ 제일 중요한 AWS ###########
 리눅스 설치명령어
 

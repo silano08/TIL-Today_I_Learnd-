@@ -1,0 +1,97 @@
+필기필기
+
+1. schema는 class라서 new를 붙여줘야함!(왜?)
+const TodoSchema = new mongoose.Schema({});
+2. 몽고DB내에 이미 고유한 id값이 존재함 - 버츄얼아이디 조사해보기
+3. 그리고 this란 뭘까?
+
+TodoSchema.virtual("todoId").get(function(){
+    return this._id.toHexString();
+});
+TodoSchema.set("toJSON",{
+    virtuals:true
+});
+
+4. 링크에 들어간 명사들 복수형으로 쓰는걸 추천(REST API)
+
+5. 그래서 async가 뭔데?
+6. 구조분해할당?
+7. DB에서 가장 수가 큰값
+
+    // sort("-order") < 내림차순으로 정렬하려면 변수앞에 "-"를 붙여주면됨
+
+8. 프로미스가 뭐냐, 프로미스는 await과 함께
+왜 이게아니라
+const maxOrderTodo = Todo.findOne().sort("-order");
+이거인건지
+const maxOrderTodo = await Todo.findOne().sort("-order").exec();
+
+9. 몽구스 잠깐 정리하고가기!
+10. API를 작업할땐 마무리로 res.send()를 꼭 해줘야함 
+아무것도 반응이 오지않으면 클라이언트쪽에서 에러를 낼수도있음
+
+11. 삼항연산자
+if(don){
+	todo.doneAt = new Date();
+}else{ todo.doneAt = null;}와
+todo.doneAt = done? new Date():null;는 같은코드
+
+12. node express를 개발하기 위한 기초개념!
+REST API : HTTP URI + HTTP Method , URI로 대상자원을 명시, Method로 해당자원에대한행위를 정의
+http uri를 통해 모든 자원을 표현하는 특징이 있음. 데이터를 주고받을때도 그냥 URI을 만들어서 그안에 기능을 만드는거임
+같은경로라도 여러 메소드함수를 통해 다른기능을 구현할수있음
+참조블로그 : https://bcho.tistory.com/321
+
+라우팅/라우터: app.METHOD(PATH, HANDLER) 이런구조에서 URI(경로), HTTP요청메소드
+특정엔드포인트에 대한 요청에 앱이 응답하는 방법을
+결정하는것. 각 라우트는 핸들러함수를 가질수있음 이 함수는 라우트가 일치할때 실행됨
+, 라우트는 경로에대한 얘기같음.(/user 라우트에대한 POST요청 이런식으로 말함)
+즉 라우트는 경로, 라우터는 이 모든 실행이 포함된 코드, 라우팅은 실행하는걸 말하는듯
+
+핸들러에서 req와 res
+req : 요청오브젝트
+res : 응답오브젝트
+
+다른설명 참조
+라우터: 엔드포인트와 해당 엔드포인트에서 실행돼야 할 로직을 연결해주는 역할
+컨트롤러: 미들웨어의 일종이지만 메인 로직을 담당하므로 분리해서 관리
+
+미들웨어: 메인 로직의 컨트롤러 앞뒤로 추가적인 일을 담당
+ex. 로그인확인을 넘길때
+router.get("/users/me",authMiddleWare,async(req,res)=>{
+    console.log(res.locals); 
+    res.status(400).send({});
+})
+이런식으로 중간에 auth미들웨어를 붙여주는식으로활용
+
+구조분해할당(ES6 문법)
+const { email, password } = req.body;
+
+mongoose사용법(별개로 또 정리하기)
+
+12-1. 그래서 http가 뭔데?
+12-2. async함수 await?
+
+13. JWT 로그인
+로그인기능 구현할때 post를 쓰는데 get을 쓰면 주소에 개인정보가 다 노출이되어서그럼
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
