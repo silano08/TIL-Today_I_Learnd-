@@ -12,8 +12,21 @@ npm install express < 위의걸로 인해 json파일 생기고 express설치
 3) 한글 깨짐 방지! ⇒ iconv-lite
 npm install axios cheerio iconv-lite -s
 
+// sql db설정
+npx sequelize model:generate --name User --attributes email:string,nickname:string,password:string
+npx sequelize db:create // 데이터베이스 서버에 데이터베이스생성
+npx sequelize db:migrate < 테이블 생성하기
+#################################
 5.로그인되는 쇼핑몰
 mongoose,jsonwebtoken,express
+
+SQL
+npm i sequelize mysql2 -S
+npm i sequelize-cli -D
+npx sequelize init
+> 폴더가 세팅된후 시퀄라이저를 사용할때
+config.json에 들어가 development에서 환경설정 맞는지 확인. 틀리면 조정해줘야함
+npx sequelize db:create
 
 ############ 제일 중요한 AWS ###########
 리눅스 설치명령어

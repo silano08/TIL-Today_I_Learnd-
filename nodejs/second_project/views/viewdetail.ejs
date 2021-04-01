@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <title>게시글</title>
+
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const _id = urlParams.get("_id");
+
+        $(document).ready(function () {
+            get_detail();
+            get_comments();
+        })
+
+        ///////////////
+        function get_comments() {
+            $("#commentplus").empty();
+            $.ajax({
+                type: "GET",
+                url: `/api/comments/${_id}`,
+                success: function (response) {
+                    let post = response["detail"]
+                    for (let i = 0; i < post.length; i++) {
+                        make_card(post[i]); }
+                   
+                }
+            })
+        }
+
+        function make_card(item) {
+            let htmlTemp = `<tbody id="commentplus">
+                <tr>
+                    <th scope="row">${item["nickname"]}</th>
+                    <td>${item["comment"]}</td>
+                </tr>
+            </tbody>`
+            $("#commentplus").append(htmlTemp)
+        }
+        ///////////////////////
+
+        function get_detail() {
+            $.ajax({
+                type: "GET",
+                url: `/api/posts/${_id}`,
+                data: {},
+                error: function (xhr, status, error) {
+                    if (status == 404) {
+                        alert("존재하지 않는 게시글입니다.");
+                    }
+                    window.location.href = "/main";
+                },
+                success: function (response) {
+                    let postsDetail = response["detail"];
+                    $("#posttitle").text(postsDetail["title"]);
+                    $("#username").text(postsDetail["nickname"]);
+                    $("#postdate").text(postsDetail["date"]);
+                    $("#board_content").text(postsDetail["mainpost"]);
+                }
+            });
+        }
+        function edit(item) {
+            window.location.href = `/edit?_id=${_id}`;
+        }
+        function home() {
+            window.location.href = "/main";
+        }
+
+        ///////// 댓글기능
+        function comment() {
+            let user;
+            getSelf(function (u) {
+                user = u;
+            });
+
+            function getSelf(callback) {
+                $.ajax({
+                    type: "GET",
+                    url: "/api/users/me",
+                    headers: {
+                        authorization: `Bearer ${localStorage.getItem("token")}`,
+                    },
+                    success: function (response) {
+                        callback(response.user);
+                    },
+                    error: function (xhr, status, error) {
+                        if (status == 401) {
+                            alert("로그인이 필요합니다.");
+                        } else {
+                            localStorage.clear();
+                            alert("로그인이후 가능한 서비스입니다.");
+                        }
+                        window.location.href = "/home";
+                    },
+                });
+            }
+
+            let comment = $('#comment').val();
+            $.ajax({
+                type: "POST",
+                url: "/api/comments",
+                data: { comment: comment, postid: _id, token: localStorage.getItem("token") },
+                success: function (response) {
+                    alert("댓글이 추가되었습니다!");
+                    window.location.reload();
+                }
+            });
+        }
+
+    </script>
+</head>
+
+<body>
+    <article>
+        <div class="container" role="main">
+            <h2 id="posttitle">board Content</h2>
+            <div class="bg-white rounded shadow-sm">
+                <div class="board_title" id="username">
+                    정상적인
+                </div>
+
+                <div class="board_info_box" id="postdate">
+                    <span class="board_author">루트로</span>
+                    <span class="board_date">들어와주시길</span>
+                </div>
+                <div class="board_content" id="board_content">바랍니다ㅎㅎ</div>
+            </div>
+
+
+            <div style="margin-top : 20px">
+                <!-- <button type="button" class="btn btn-sm btn-primary" id="btnUpdate" onclick="edit()">수정</button> -->
+                <button type="button" class="btn btn-sm btn-primary" id="btnList" onclick="home()">목록</button>
+            </div>
+
+            <div class="input-group mb-3" style="margin-top : 20px">
+                <input type="text" class="form-control" placeholder="댓글을 작성해주세요!" aria-label="Recipient's username"
+                    aria-describedby="button-addon2" id="comment">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+                    onclick="comment()">작성하기</button>
+            </div>
+
+            <div>
+                <table class="table table-bordered border-primary">
+                    <thead>
+                    </thead>
+                    <tbody id="commentplus">
+                        <tr>
+                            <th scope="row">test</th>
+                            <td>댓글창뚱뚱하게되나?</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+    </article>
+
+</body>
+
+</html>
