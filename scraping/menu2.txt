@@ -1,0 +1,749 @@
+{
+    "menu" : "음료",
+    "category" : "콜드 브루",
+    "eng_name" : "Nitro Vanilla Cream",
+    "name" : "나이트로 바닐라 크림",
+    "description" : "부드러운 목넘김의 나이트로 커피와 바닐라 크림의 매력을 한번에 느껴보세요!",
+    "price" : 5800,
+    "eng_category" : "Cold Brew",
+    "nutrition" : "'75', '2', '1', '2.7', '0', '20', '10', '245'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2019/09/[9200000002487]_20190919181354845.jpg",
+    "allergy" : " 우유",
+    "hot" : false,
+    "ice" : true
+}
+
+{
+    "menu" : "음료",
+    "category" : "2021 CherryBlossom",
+    "eng_name" : "Midnight Bergamot Cold Brew",
+    "name" : "미드나잇 베르가못 콜드 브루",
+    "description" : "화이트 초콜릿과 화사한 베르가못향이 콜드 브루를 만나\n벚꽃이 만발한 보랏빛 밤을 닮은\n미드나잇 베르가못 콜드 브루 ",
+    "price" : 6100,
+    "eng_category" : "New",
+    "nutrition" : "'170', '1.3', '3', '3.9', '0', '40', '29', '135'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2021/02/[9200000003273]_20210217102625028.jpg",
+    "allergy" : " 우유",
+    "hot" : true,
+    "ice" : false
+}
+
+{
+    "menu" : "음료",
+    "category" : "콜드 브루",
+    "eng_name" : "Velvet Dark Mocha Nitro",
+    "name" : "벨벳 다크 모카 나이트로",
+    "description" : "다크 초콜릿 모카의 진한 바디감과 함께\n헤이즐넛 향과 달콤한 카라멜 크림 폼으로\n벨벳같은 부드러움까지 살린 리저브 나이트로 커피",
+    "price" : 5800,
+    "eng_category" : "Cold Brew",
+    "nutrition" : "'150', '6', '2', '7', '0', '15', '17', '160'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2021/03/[9200000003509]_20210322093452556.jpg",
+    "allergy" : " 우유",
+    "hot" : false,
+    "ice" : true
+}
+
+{
+    "menu" : "음료",
+    "category" : "콜드 브루",
+    "eng_name" : "French Apple Tarte Nitro",
+    "name" : "프렌치 애플 타르트 나이트로",
+    "description" : "카라멜향을 머금은 애플의 달콤함과\n부드러운 콜드 크레마를 조화롭게\n느낄 수 있는 리저브 나이트로 음료",
+    "price" : 5800,
+    "eng_category" : "Cold Brew",
+    "nutrition" : "'80', '0', '0', '0', '0', '0', '19', '145'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2021/03/[9200000003507]_20210322093414448.jpg",
+    "allergy" : "none",
+    "hot" : false,
+    "ice" : true
+}
+
+{
+    "menu" : "음료",
+    "category" : "콜드 브루",
+    "eng_name" : "Nitro Cold Brew",
+    "name" : "나이트로 콜드 브루",
+    "description" : "나이트로 커피 정통의 캐스케이딩과 부드러운 콜드 크레마!\n부드러운 목 넘김과 완벽한 밸런스에 커피 본연의 단맛을 경험할 수 있습니다.\n",
+    "price" : 5800,
+    "eng_category" : "Cold Brew",
+    "nutrition" : "'5', '0', '0', '0', '0', '5', '0', '245'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2017/03/[9200000000479]_20170328134443541.jpg",
+    "allergy" : "none",
+    "hot" : false,
+    "ice" : true
+}
+
+{
+    "menu" : "음료",
+    "category" : "추천",
+    "eng_name" : "Dolce Cold Brew",
+    "name" : "돌체 콜드 브루",
+    "description" : "무더운 여름철, \n동남아 휴가지에서 즐기는 커피를 떠오르게 하는 \n스타벅스 음료의 베스트 x 베스트 조합인\n돌체 콜드 브루를 만나보세요! ",
+    "price" : 5600,
+    "eng_category" : "Recommend",
+    "nutrition" : "'265', '9', '8', '12', '0.2', '115', '29', '150'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2019/04/[9200000002081]_20190409153909859.jpg",
+    "allergy" : " 우유",
+    "hot" : true,
+    "ice" : false
+}
+
+{
+    "menu" : "음료",
+    "category" : "콜드 브루",
+    "eng_name" : "Vanilla Cream Cold Brew",
+    "name" : "바닐라 크림 콜드 브루",
+    "description" : "콜드 브루에 더해진 바닐라 크림으로 깔끔하면서 달콤한 콜드 브루를 새롭게 즐길 수 있는 음료입니다.",
+    "price" : 5800,
+    "eng_category" : "Cold Brew",
+    "nutrition" : "'125', '6', '3', '8', '0', '58', '11', '150'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2017/04/[9200000000487]_20170405152830688.jpg",
+    "allergy" : " 우유",
+    "hot" : false,
+    "ice" : true
+}
+
+{
+    "menu" : "음료",
+    "category" : "콜드 브루",
+    "eng_name" : "Jeju Forest Cold Brew",
+    "name" : "제주 비자림 콜드 브루",
+    "description" : "[제주지역 한정음료] 제주 천년의 숲 비자림을 연상시키는 \n음료로 제주에서 유기농 말차로 만든 \n파우더와 Cold Brew를 활용한 음료.",
+    "price" : 5800,
+    "eng_category" : "Cold Brew",
+    "nutrition" : "'340', '8', '10', '12', '0.3', '115', '44', '105'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2020/09/[9200000002672]_20200921171223958.jpg",
+    "allergy" : "none",
+    "hot" : false,
+    "ice" : true
+}
+
+{
+    "menu" : "음료",
+    "category" : "추천",
+    "eng_name" : "Cold Brew",
+    "name" : "콜드 브루",
+    "description" : "스타벅스 바리스타의 정성으로 탄생한 콜드 브루!\n\n콜드 브루 전용 원두를 차가운 물로 14시간 동안 추출하여 한정된 양만 제공됩니다.\n깊은 풍미의 새로운 커피 경험을 즐겨보세요.",
+    "price" : 5600,
+    "eng_category" : "Recommend",
+    "nutrition" : "'5', '0', '0', '0', '0', '11', '0', '150'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2016/04/[9200000000038]_20160408135802812.jpg",
+    "allergy" : "none",
+    "hot" : true,
+    "ice" : false
+}
+
+{
+    "menu" : "음료",
+    "category" : "콜드 브루",
+    "eng_name" : "Cold Brew Malt",
+    "name" : "콜드 브루 몰트",
+    "description" : "[리저브 전용음료] 리저브 콜드 브루, 바닐라 아이스크림, 몰트가 블렌딩된 리저브만의 쉐이크\n",
+    "price" : 5800,
+    "eng_category" : "Cold Brew",
+    "nutrition" : "'510', '20', '10', '30', '0', '147.8', '40', '150'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2021/02/[9200000001636]_20210225093600541.jpg",
+    "allergy" : " 대두 / 우유",
+    "hot" : false,
+    "ice" : true
+}
+
+{
+    "menu" : "음료",
+    "category" : "콜드 브루",
+    "eng_name" : "Cold Brew Float",
+    "name" : "콜드 브루 플로트",
+    "description" : "[리저브 전용음료] 리저브 콜드 브루 위에 녹아 내리는 한 스쿱의 바닐라 아이스크림",
+    "price" : 5800,
+    "eng_category" : "Cold Brew",
+    "nutrition" : "'230', '10', '3', '15', '0', '69', '18', '150'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2021/02/[9200000001635]_20210225092236754.jpg",
+    "allergy" : " 우유",
+    "hot" : false,
+    "ice" : true
+}
+
+{
+    "menu" : "음료",
+    "category" : "에스프레소",
+    "eng_name" : "Jeju Byuldabang Peanut Latte",
+    "name" : "제주 별다방 땅콩 라떼",
+    "description" : "[제주지역 한정음료] 커피 땅콩의 디저트 느낌의 음료로\n땅콩의 고소함과 커피 풍미가 강조된 스타벅스 제주에서만\n즐길 수 있는 Coffee 음료.",
+    "price" : 5100,
+    "eng_category" : "Espresso",
+    "nutrition" : "'610', '14', '16', '26', '0', '240', '64', '150'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2021/03/[9200000003427]_20210324165929869.jpg",
+    "allergy" : " 땅콩 / 대두 / 우유",
+    "hot" : true,
+    "ice" : false
+}
+
+{
+    "menu" : "음료",
+    "category" : "에스프레소",
+    "eng_name" : "Shakerato Affogato",
+    "name" : "사케라또 아포가토",
+    "description" : "민트 잎과 쉐이킹한 리저브 에스프레소를\n바닐라 아이스크림에 부어 프레쉬함과\n달콤함이 조화롭게 퍼지는 리저브 만의 디저트 음료\n",
+    "price" : 5100,
+    "eng_category" : "Espresso",
+    "nutrition" : "'290', '10', '4', '15', '0', '70', '30', '210'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2021/03/[9200000003505]_20210322093241696.jpg",
+    "allergy" : " 우유",
+    "hot" : true,
+    "ice" : false
+}
+
+{
+    "menu" : "음료",
+    "category" : "에스프레소",
+    "eng_name" : "Sparkling Citrus Espresso",
+    "name" : "스파클링 시트러스 에스프레소",
+    "description" : "리저브 에스프레소에 상큼한 레몬과\n진저에일을 더해 청량감과 시트러스 풍미를\n가득 선사하는 커피 음료",
+    "price" : 5100,
+    "eng_category" : "Espresso",
+    "nutrition" : "'65', '0', '0', '0', '0', '5', '15', '105'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2021/03/[9200000003506]_20210322093318028.jpg",
+    "allergy" : "none",
+    "hot" : true,
+    "ice" : false
+}
+
+{
+    "menu" : "음료",
+    "category" : "에스프레소",
+    "eng_name" : "Espresso Con Panna",
+    "name" : "에스프레소 콘 파나",
+    "description" : "신선한 에스프레소 샷에 풍부한 휘핑크림을 얹은 커피 음료로서, 뜨거운 커피의 맛과 차갑고 달콤한 생크림의 맛을 같이 즐길 수 있는 커피 음료",
+    "price" : 5100,
+    "eng_category" : "Espresso",
+    "nutrition" : "'30', '1.5', '0', '2.5', '0', '0', '1', '75'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[30]_20150813221811147.jpg",
+    "allergy" : " 우유",
+    "hot" : true,
+    "ice" : false
+}
+
+{
+    "menu" : "음료",
+    "category" : "에스프레소",
+    "eng_name" : "Espresso Macchiato",
+    "name" : "에스프레소 마키아또",
+    "description" : "신선한 에스프레소 샷에 우유 거품을 살짝 얹은 커피 음료로써, 강렬한 에스프레소의 맛과 우유의 부드러움을 같이 즐길 수 있는 커피 음료",
+    "price" : 5100,
+    "eng_category" : "Espresso",
+    "nutrition" : "'10', '0', '1', '0', '0', '0', '0', '75'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[25]_20150813221101602.jpg",
+    "allergy" : " 우유",
+    "hot" : true,
+    "ice" : false
+}
+
+{
+    "menu" : "음료",
+    "category" : "에스프레소",
+    "eng_name" : "Iced Caffe Americano",
+    "name" : "아이스 카페 아메리카노",
+    "description" : "진한 에스프레소에 시원한 정수물과 얼음을 더하여 스타벅스의 깔끔하고 강렬한 에스프레소를 가장 부드럽고 시원하게 즐길 수 있는 커피",
+    "price" : 5100,
+    "eng_category" : "Espresso",
+    "nutrition" : "'10', '0', '1', '0', '0', '5', '0', '150'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[110563]_20150813222100303.jpg",
+    "allergy" : "none",
+    "hot" : false,
+    "ice" : true
+}
+
+{
+    "menu" : "음료",
+    "category" : "에스프레소",
+    "eng_name" : "Caffe Americano",
+    "name" : "카페 아메리카노",
+    "description" : "진한 에스프레소와 뜨거운 물을 섞어 스타벅스의 깔끔하고 강렬한 에스프레소를 가장 부드럽게 잘 느낄 수 있는 커피 ",
+    "price" : 5100,
+    "eng_category" : "Espresso",
+    "nutrition" : "'10', '0', '1', '0', '0', '5', '0', '150'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[94]_20150813222021880.jpg",
+    "allergy" : "none",
+    "hot" : true,
+    "ice" : false
+}
+
+{
+    "menu" : "음료",
+    "category" : "에스프레소",
+    "eng_name" : "Iced Caramel Macchiato",
+    "name" : "아이스 카라멜 마키아또",
+    "description" : "향긋한 바닐라 시럽과 시원한 우유와 얼음을 넣고 점을 찍듯이 에스프레소를 부은 후 벌집 모양으로 카라멜 드리즐을 올린 달콤한 커피 음료",
+    "price" : 5100,
+    "eng_category" : "Espresso",
+    "nutrition" : "'190', '4.6', '6', '8', '0', '110', '21', '75'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[110582]_20150803101947416.jpg",
+    "allergy" : " 대두 / 우유",
+    "hot" : false,
+    "ice" : true
+}
+
+{
+    "menu" : "음료",
+    "category" : "에스프레소",
+    "eng_name" : "Caramel Macchiato",
+    "name" : "카라멜 마키아또",
+    "description" : "향긋한 바닐라 시럽과 따뜻한 스팀 밀크 위에 풍성한 우유 거품을 얹고 점을 찍듯이 에스프레소를 부은 후 벌집 모양으로 카라멜 드리즐을 올린 달콤한 커피 음료",
+    "price" : 5100,
+    "eng_category" : "Espresso",
+    "nutrition" : "'200', '5', '8', '9', '0', '130', '22', '75'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[126197]_20150813215717246.jpg",
+    "allergy" : " 대두 / 우유",
+    "hot" : true,
+    "ice" : false
+}
+
+{
+    "menu" : "음료",
+    "category" : "에스프레소",
+    "eng_name" : "Iced Cappuccino",
+    "name" : "아이스 카푸치노",
+    "description" : "풍부하고 진한 에스프레소에 신선한 우유와 우유 거품이 얼음과 함께 들어간 시원하고 부드러운 커피 음료",
+    "price" : 5100,
+    "eng_category" : "Espresso",
+    "nutrition" : "'115', '3.5', '6', '6', '0', '90', '9', '75'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[110601]_20150803101742023.jpg",
+    "allergy" : " 우유",
+    "hot" : false,
+    "ice" : true
+}
+
+{
+    "menu" : "음료",
+    "category" : "에스프레소",
+    "eng_name" : "Cappuccino",
+    "name" : "카푸치노",
+    "description" : "풍부하고 진한 에스프레소에 따뜻한 우유와 벨벳 같은 우유 거품이 1:1 비율로 어우러져 마무리된 커피 음료",
+    "price" : 5100,
+    "eng_category" : "Espresso",
+    "nutrition" : "'110', '3', '6', '6', '0', '70', '8', '75'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[38]_20150821164230299.jpg",
+    "allergy" : " 우유",
+    "hot" : true,
+    "ice" : false
+}
+
+{
+    "menu" : "음료",
+    "category" : "에스프레소",
+    "eng_name" : "Lavender Cafe Breve",
+    "name" : "라벤더 카페 브레베",
+    "description" : "진한 리저브 에스프레소 샷과 은은한 라벤더향이 고급스럽게 어우러진 부드럽고 세련된 풍미의 라벤더 카페 브레베",
+    "price" : 5100,
+    "eng_category" : "Espresso",
+    "nutrition" : "'406', '22', '7', '27', '0', '140', '30', '75'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2021/02/[9200000000432]_20210225090321799.jpg",
+    "allergy" : " 우유",
+    "hot" : true,
+    "ice" : false
+}
+
+{
+    "menu" : "음료",
+    "category" : "에스프레소",
+    "eng_name" : "Rum Shot Cortado",
+    "name" : "럼 샷 코르타도",
+    "description" : "[더종로R, 청담스타R 전용음료] 최고의 리저브 에스프레소 샷, 스팀 밀크 그리고 럼이 짙게 어우러진 스타벅스 리저브 만의 코르타도입니다.",
+    "price" : 5100,
+    "eng_category" : "Espresso",
+    "nutrition" : "'70', '1.8', '3', '3', '0', '45', '8', '75'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2021/02/[9200000001086]_20210225090838935.jpg",
+    "allergy" : " 우유",
+    "hot" : true,
+    "ice" : false
+}
+
+{
+    "menu" : "음료",
+    "category" : "에스프레소",
+    "eng_name" : "Vanilla Bean Latte",
+    "name" : "바닐라 빈 라떼",
+    "description" : "리저브만을 위한 프리미엄 바닐라 빈 시럽이 부드럽게 어우러진 카페 라떼",
+    "price" : 5100,
+    "eng_category" : "Espresso",
+    "nutrition" : "'245', '6', '9', '9', '0', '150', '27', '210'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2021/02/[9200000001939]_20210225094313320.jpg",
+    "allergy" : "none",
+    "hot" : true,
+    "ice" : false
+}
+
+{
+    "menu" : "음료",
+    "category" : "에스프레소",
+    "eng_name" : "Starbucks Dolce Latte",
+    "name" : "스타벅스 돌체 라떼",
+    "description" : "스타벅스의 다른 커피 음료보다 더욱 깊은 커피의 맛과 향에 깔끔한 무지방 우유와 부드러운 돌체 시럽이 들어간 음료로 달콤하고 진한 커피 라떼",
+    "price" : 5100,
+    "eng_category" : "Espresso",
+    "nutrition" : "'255', '2.6', '12', '4.2', '0.3', '190', '39', '150'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2015/07/[128692]_20150723020548416.jpg",
+    "allergy" : " 우유",
+    "hot" : true,
+    "ice" : false
+}
+
+{
+    "menu" : "음료",
+    "category" : "에스프레소",
+    "eng_name" : "Iced Lavender Cafe Breve",
+    "name" : "아이스 라벤더 카페 브레베",
+    "description" : "진한 리저브 에스프레소 샷과 은은한 라벤더향이 고급스럽게 어우러진 부드럽고 세련된 풍미의 라벤더 카페 브레베",
+    "price" : 5100,
+    "eng_category" : "Espresso",
+    "nutrition" : "'335', '18', '6', '22', '0', '110', '27', '75'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2021/02/[9200000000433]_20210225090722574.jpg",
+    "allergy" : " 우유",
+    "hot" : false,
+    "ice" : true
+}
+
+{
+    "menu" : "음료",
+    "category" : "에스프레소",
+    "eng_name" : "Iced Vanilla Bean Latte",
+    "name" : "아이스 바닐라 빈 라떼",
+    "description" : "리저브만을 위한 프리미엄 바닐라 빈 시럽이 부드럽게 어우러진 카페 라떼",
+    "price" : 5100,
+    "eng_category" : "Espresso",
+    "nutrition" : "'155', '2.9', '5', '4.8', '0', '75', '20', '210'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2021/02/[9200000001941]_20210225094346658.jpg",
+    "allergy" : "none",
+    "hot" : false,
+    "ice" : true
+}
+
+{
+    "menu" : "음료",
+    "category" : "에스프레소",
+    "eng_name" : "Iced Starbucks Dolce Latte",
+    "name" : "아이스 스타벅스 돌체 라떼",
+    "description" : "스타벅스의 다른 커피 음료보다 더욱 깊은 커피의 맛과 향에 깔끔한 무지방 우유와 부드러운 돌체 시럽이 들어간 음료로 달콤하고 진한 커피 라떼",
+    "price" : 5100,
+    "eng_category" : "Espresso",
+    "nutrition" : "'230', '2.5', '10', '4', '0.3', '145', '35', '150'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[128695]_20150803100201917.jpg",
+    "allergy" : " 우유",
+    "hot" : false,
+    "ice" : true
+}
+
+{
+    "menu" : "음료",
+    "category" : "에스프레소",
+    "eng_name" : "Iced Caffe Latte",
+    "name" : "아이스 카페 라떼",
+    "description" : "풍부하고 진한 농도의 에스프레소가 시원한 우유와 얼음을 만나 고소함과 시원함을 즐길 수 있는 대표적인 커피 라떼",
+    "price" : 5100,
+    "eng_category" : "Espresso",
+    "nutrition" : "'110', '3.5', '6', '6', '0', '75', '8', '75'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[110569]_20150813221315652.jpg",
+    "allergy" : " 우유",
+    "hot" : false,
+    "ice" : true
+}
+
+{
+    "menu" : "음료",
+    "category" : "에스프레소",
+    "eng_name" : "Caffe Latte",
+    "name" : "카페 라떼",
+    "description" : "풍부하고 진한 에스프레소가 신선한 스팀 밀크를 만나 부드러워진 커피 위에 우유 거품을 살짝 얹은 대표적인 커피 라떼",
+    "price" : 5100,
+    "eng_category" : "Espresso",
+    "nutrition" : "'180', '5', '10', '9', '0', '115', '13', '75'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[41]_20150813221357154.jpg",
+    "allergy" : " 우유",
+    "hot" : true,
+    "ice" : false
+}
+
+{
+    "menu" : "음료",
+    "category" : "에스프레소",
+    "eng_name" : "Iced Caffe Mocha",
+    "name" : "아이스 카페 모카",
+    "description" : "진한 초콜릿 모카 시럽과 풍부한 에스프레소를 신선한 우유 그리고 얼음과 섞어 휘핑크림으로 마무리한 음료로 진한 에스프레소와 초콜릿 맛이 어우러진 커피",
+    "price" : 5100,
+    "eng_category" : "Espresso",
+    "nutrition" : "'250', '8', '7', '14', '0', '70', '21', '95'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[110566]_20150813221545269.jpg",
+    "allergy" : " 우유",
+    "hot" : false,
+    "ice" : true
+}
+
+{
+    "menu" : "음료",
+    "category" : "에스프레소",
+    "eng_name" : "Iced White Chocolate Mocha",
+    "name" : "아이스 화이트 초콜릿 모카",
+    "description" : "달콤하고 부드러운 화이트 초콜릿 시럽과 에스프레소를 신선한 우유 그리고 얼음과 섞어 휘핑크림으로 마무리한 음료로 달콤함과 강렬한 에스프레소가 부드럽게 어우러진 커피",
+    "price" : 5100,
+    "eng_category" : "Espresso",
+    "nutrition" : "'260', '8', '7', '13', '0', '75', '27', '75'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[110572]_20150803102719457.jpg",
+    "allergy" : " 우유",
+    "hot" : false,
+    "ice" : true
+}
+
+{
+    "menu" : "음료",
+    "category" : "에스프레소",
+    "eng_name" : "Caffe Mocha",
+    "name" : "카페 모카",
+    "description" : "진한 초콜릿 모카 시럽과 풍부한 에스프레소를 스팀 밀크와 섞어 휘핑크림으로 마무리한 음료로 진한 에스프레소와 초콜릿 맛이 어우러진 커피",
+    "price" : 5100,
+    "eng_category" : "Espresso",
+    "nutrition" : "'290', '9', '10', '15', '0', '105', '25', '95'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[46]_20150803105115048.jpg",
+    "allergy" : " 우유",
+    "hot" : true,
+    "ice" : false
+}
+
+{
+    "menu" : "음료",
+    "category" : "에스프레소",
+    "eng_name" : "White Chocolate Mocha",
+    "name" : "화이트 초콜릿 모카",
+    "description" : "달콤하고 부드러운 화이트 초콜릿 시럽과 에스프레소를 스팀 밀크와 섞어 휘핑크림으로 마무리한 음료로 달콤함과 강렬한 에스프레소가 부드럽게 어우러진 커피",
+    "price" : 5100,
+    "eng_category" : "Espresso",
+    "nutrition" : "'345', '11', '11', '18', '0', '150', '35', '75'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[128192]_20150803101501857.jpg",
+    "allergy" : " 우유",
+    "hot" : true,
+    "ice" : false
+}
+
+{
+    "menu" : "음료",
+    "category" : "에스프레소",
+    "eng_name" : "Vanilla Starbucks Double Shot",
+    "name" : "바닐라 스타벅스 더블 샷",
+    "description" : "신선하게 제조된 더블 샷 믹스에 바닐라 시럽을 넣고 에스프레소 샷, 얼음이 어우러져 핸드 쉐이킹한 음료",
+    "price" : 5100,
+    "eng_category" : "Espresso",
+    "nutrition" : "'125', '4.5', '2', '6', '0', '30', '14', '150'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2018/10/[110612]_20181022143635434.jpg",
+    "allergy" : " 우유",
+    "hot" : true,
+    "ice" : false
+}
+
+{
+    "menu" : "음료",
+    "category" : "에스프레소",
+    "eng_name" : "Blonde Vanilla Double Shot Macchiato",
+    "name" : "블론드 바닐라 더블 샷 마키아또",
+    "description" : "블론드 에스프레소 2샷에 흑당 시럽과 바닐라 크림이 부드럽고 달콤하게 어우러진 마키아또 타입의 음료를 즐겨 보세요!",
+    "price" : 5100,
+    "eng_category" : "Espresso",
+    "nutrition" : "'315', '12', '8', '16', '0', '130', '31', '170'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2020/04/[9200000002950]_20200416142151278.jpg",
+    "allergy" : " 우유",
+    "hot" : true,
+    "ice" : false
+}
+
+{
+    "menu" : "음료",
+    "category" : "에스프레소",
+    "eng_name" : "Iced Blonde Vanilla Double Shot Macchiato",
+    "name" : "아이스 블론드 바닐라 더블 샷 마키아또",
+    "description" : "블론드 에스프레소 2샷에 흑당 시럽과 바닐라 크림이 부드럽고 달콤하게 어우리진 마키아또 타입의 음료를 즐겨 보세요!",
+    "price" : 5100,
+    "eng_category" : "Espresso",
+    "nutrition" : "'195', '6', '5', '8', '0', '65', '22', '170'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2020/04/[9200000002953]_20200416142415423.jpg",
+    "allergy" : " 우유",
+    "hot" : false,
+    "ice" : true
+}
+
+{
+    "menu" : "음료",
+    "category" : "에스프레소",
+    "eng_name" : "Espresso",
+    "name" : "에스프레소",
+    "description" : "스타벅스 에스프레소는 향기로운 크레마 층과 바디 층, 하트 층으로 이루어져 있으며, 입안 가득히 커피와 달콤한 카라멜 향이 느껴지는 커피 음료",
+    "price" : 5100,
+    "eng_category" : "Espresso",
+    "nutrition" : "'5', '0', '0', '0', '0', '0', '0', '75'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[20]_20150813221922951.jpg",
+    "allergy" : "none",
+    "hot" : true,
+    "ice" : false
+}
+
+{
+    "menu" : "음료",
+    "category" : "에스프레소",
+    "eng_name" : "Coffee Starbucks Double Shot",
+    "name" : "커피 스타벅스 더블 샷",
+    "description" : "신선하게 제조된 더블 샷 믹스에 클래식 시럽을 넣고 에스프레소 샷, 얼음이 어우러져 핸드 쉐이킹한 음료",
+    "price" : 5100,
+    "eng_category" : "Espresso",
+    "nutrition" : "'125', '5', '3', '6', '0.1', '28.5', '14', '150'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[110611]_20150813220251638.jpg",
+    "allergy" : " 우유",
+    "hot" : true,
+    "ice" : false
+}
+
+{
+    "menu" : "음료",
+    "category" : "에스프레소",
+    "eng_name" : "Classic Affogato",
+    "name" : "클래식 아포가토",
+    "description" : "[리저브R 매장 전용음료] 리저브 에스프레소 투 샷이 바닐라 아이스크림과 진하게 어우러진 정통 아포가토",
+    "price" : 5100,
+    "eng_category" : "Espresso",
+    "nutrition" : "'240', '10', '4', '15', '0', '70', '18', '150'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2021/02/[9200000001631]_20210225090916688.jpg",
+    "allergy" : " 우유",
+    "hot" : true,
+    "ice" : false
+}
+
+{
+    "menu" : "음료",
+    "category" : "에스프레소",
+    "eng_name" : "Hazelnut Starbucks Double Shot",
+    "name" : "헤이즐넛 스타벅스 더블 샷",
+    "description" : "신선하게 제조된 더블 샷 믹스에 헤이즐넛 시럽을 넣고 에스프레소 샷, 얼음이 어우러져 핸드 쉐이킹한 음료",
+    "price" : 5100,
+    "eng_category" : "Espresso",
+    "nutrition" : "'125', '5', '3', '6', '0.1', '28.5', '14', '150'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2018/10/[110614]_20181022143713157.jpg",
+    "allergy" : " 우유",
+    "hot" : true,
+    "ice" : false
+}
+
+{
+    "menu" : "음료",
+    "category" : "프라푸치노",
+    "eng_name" : "Jeju Byuldabang Peanut Frappuccino",
+    "name" : "제주 별다방 땅콩 프라푸치노",
+    "description" : "[제주지역 한정음료] 커피 땅콩의 디저트 느낌의 음료로\n땅콩의 고소함과 커피 풍미가 강조된 한여름밤 시원하게 즐길 수 있는 음료",
+    "price" : 6100,
+    "eng_category" : "Frappuccino",
+    "nutrition" : "'545', '9', '8', '17', '0', '230', '83', '20'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2021/03/[9200000003428]_20210324170025045.jpg",
+    "allergy" : " 땅콩 / 대두 / 우유",
+    "hot" : false,
+    "ice" : true
+}
+
+{
+    "menu" : "음료",
+    "category" : "프라푸치노",
+    "eng_name" : "Double Espresso Chip Frappuccino",
+    "name" : "더블 에스프레소 칩 프라푸치노",
+    "description" : "리스트레토 에스프레소 2샷과 에스프레소 칩, 하프앤하프가 진하게 어우러진 커피의 기본에 충실한 프라푸치노\n",
+    "price" : 6100,
+    "eng_category" : "Frappuccino",
+    "nutrition" : "'265', '11', '3', '13', '0', '140', '31', '130'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2020/07/[9200000002760]_20200713170156913.jpg",
+    "allergy" : " 우유",
+    "hot" : false,
+    "ice" : true
+}
+
+{
+    "menu" : "음료",
+    "category" : "프라푸치노",
+    "eng_name" : "Mocha Frappuccino",
+    "name" : "모카 프라푸치노",
+    "description" : "초콜릿과 커피가 어우러진 프라푸치노",
+    "price" : 6100,
+    "eng_category" : "Frappuccino",
+    "nutrition" : "'280', '6', '5', '11', '0', '180', '36', '90'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[168004]_20150813221231921.jpg",
+    "allergy" : " 우유",
+    "hot" : false,
+    "ice" : true
+}
+
+{
+    "menu" : "음료",
+    "category" : "프라푸치노",
+    "eng_name" : "Espresso Frappuccino",
+    "name" : "에스프레소 프라푸치노",
+    "description" : "에스프레소 샷의 강렬함과 약간의 단맛이 어우러진 프라푸치노",
+    "price" : 6100,
+    "eng_category" : "Frappuccino",
+    "nutrition" : "'145', '1.1', '2', '1.7', '0', '115', '29', '120'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[168007]_20150813222212671.jpg",
+    "allergy" : " 우유",
+    "hot" : false,
+    "ice" : true
+}
+
+{
+    "menu" : "음료",
+    "category" : "추천",
+    "eng_name" : "Java Chip Frappuccino",
+    "name" : "자바 칩 프라푸치노",
+    "description" : "커피, 모카 소스, 진한 초콜릿 칩이 입안 가득 느껴지는 스타벅스에서만 맛볼 수 있는 프라푸치노",
+    "price" : 5600,
+    "eng_category" : "Recommend",
+    "nutrition" : "'340', '9', '6', '14', '0', '180', '42', '100'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[168016]_20150813231001890.jpg",
+    "allergy" : " 대두 / 우유 / 밀",
+    "hot" : true,
+    "ice" : false
+}
+
+{
+    "menu" : "음료",
+    "category" : "프라푸치노",
+    "eng_name" : "Caramel Frappuccino",
+    "name" : "카라멜 프라푸치노",
+    "description" : "카라멜과 커피가 어우러진 프라푸치노",
+    "price" : 6100,
+    "eng_category" : "Frappuccino",
+    "nutrition" : "'300', '7', '4', '11', '0', '190', '39', '85'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[168010]_20150813220356049.jpg",
+    "allergy" : " 대두 / 우유",
+    "hot" : false,
+    "ice" : true
+}
+
+{
+    "menu" : "음료",
+    "category" : "프라푸치노",
+    "eng_name" : "White Chocolate Mocha Frappuccino",
+    "name" : "화이트 초콜릿 모카 프라푸치노",
+    "description" : "화이트 초콜릿, 커피와 우유가 조화로운 프라푸치노",
+    "price" : 6100,
+    "eng_category" : "Frappuccino",
+    "nutrition" : "'245', '6', '4', '8', '0', '140', '38', '85'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[168013]_20150806153343261.jpg",
+    "allergy" : " 우유",
+    "hot" : false,
+    "ice" : true
+}
+
+{
+    "menu" : "음료",
+    "category" : "프라푸치노",
+    "eng_name" : "Vanilla Cream Frappuccino",
+    "name" : "바닐라 크림 프라푸치노",
+    "description" : "신선한 우유와 바닐라 시럽이 어우러진 크림 프라푸치노",
+    "price" : 6100,
+    "eng_category" : "Frappuccino",
+    "nutrition" : "'200', '6', '4', '8', '0', '150', '28', '0'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[168054]_20150813220927322.jpg",
+    "allergy" : " 우유",
+    "hot" : false,
+    "ice" : true
+}

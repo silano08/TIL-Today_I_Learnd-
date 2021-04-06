@@ -8,8 +8,8 @@ const connect = () => {
       useUnifiedTopology: true,
       useCreateIndex: true,
       ignoreUndefined: true,
-    //   user:"test",
-    //   pass:"test"
+      user:"test",
+      pass:"test"
     })
     .catch(err => console.log(err));
 };

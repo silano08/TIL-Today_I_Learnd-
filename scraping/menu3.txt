@@ -1,0 +1,149 @@
+{
+    "menu" : "음료",
+    "category" : "기타 제조 음료",
+    "eng_name" : "Jeju Green Citrus Lemonade",
+    "name" : "제주 청귤 레모네이드",
+    "description" : "[제주지역 한정음료] 제주의 유채꽃밭을 형상화한 음료로\n한여름 시원하게 비타민과 에너지를 충전할 수 있는 음료",
+    "price" : 5900,
+    "eng_category" : "Others",
+    "nutrition" : "'235', '0', '0', '0.1', '0', '30', '56', '0'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2021/03/[9200000003430]_20210324170218398.jpg",
+    "allergy" : "none",
+    "hot" : true,
+    "ice" : false
+}
+
+{
+    "menu" : "음료",
+    "category" : "기타 제조 음료",
+    "eng_name" : "Signature Hot Chocolate",
+    "name" : "시그니처 핫 초콜릿",
+    "description" : "깊고 진한 초콜릿과 부드러운 휘핑크림이 입안에서 사르르 녹는 프리미엄 초콜릿 음료",
+    "price" : 5900,
+    "eng_category" : "Others",
+    "nutrition" : "'435', '16', '12', '26', '1', '114', '37', '15'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[72]_20150813231821817.jpg",
+    "allergy" : " 우유",
+    "hot" : true,
+    "ice" : false
+}
+
+{
+    "menu" : "음료",
+    "category" : "기타 제조 음료",
+    "eng_name" : "Iced Signature Chocolate",
+    "name" : "아이스 시그니처 초콜릿",
+    "description" : "깊고 진한 초콜릿과 부드러운 휘핑크림이 입안에서 사르르 녹는 프리미엄 초콜릿 음료",
+    "price" : 5900,
+    "eng_category" : "Others",
+    "nutrition" : "'435', '16', '12', '26', '1', '114', '37', '15'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2015/07/[110621]_20150723005650154.jpg",
+    "allergy" : " 우유",
+    "hot" : false,
+    "ice" : true
+}
+
+{
+    "menu" : "음료",
+    "category" : "기타 제조 음료",
+    "eng_name" : "Lime Floater with Reserve CB Shot",
+    "name" : "라임 플로터 위드 리저브 CB 샷",
+    "description" : "[더종로R, 청담스타R 전용음료] 오렌지의 상큼함과 리저브 콜드 브루 샷이 상쾌하게 느껴지는 리프레쉬 음료입니다.",
+    "price" : 5900,
+    "eng_category" : "Others",
+    "nutrition" : "'90', '0', '1', '0', '0', '5', '20', '60'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2021/02/[9200000000428]_20210225090055924.jpg",
+    "allergy" : "none",
+    "hot" : true,
+    "ice" : false
+}
+
+{
+    "menu" : "음료",
+    "category" : "기타 제조 음료",
+    "eng_name" : "Steamed Milk",
+    "name" : "스팀 우유",
+    "description" : "부드럽고 담백한 따뜻한 우유.",
+    "price" : 5900,
+    "eng_category" : "Others",
+    "nutrition" : "'215', '7', '13', '11', '0', '173', '18', '0'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2015/07/[17]_20150723005119588.jpg",
+    "allergy" : " 우유",
+    "hot" : true,
+    "ice" : false
+}
+
+{
+    "menu" : "음료",
+    "category" : "기타 제조 음료",
+    "eng_name" : "Iced Jeju Black Sesame Latte",
+    "name" : "아이스 제주 까망 라떼",
+    "description" : "[제주지역 한정음료] 제주도의 돌담길과 하르방의 풍경을\n느낄 수 있는 음료로 고소한 흑임자와 달콤한 소보로 토핑으로 \n시원하게 누구나 즐길 수 있는 음료",
+    "price" : 5900,
+    "eng_category" : "Others",
+    "nutrition" : "'225', '11', '8', '15', '0', '130', '13', '0'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2020/09/[9200000001302]_20200921171804533.jpg",
+    "allergy" : " 땅콩 / 대두 / 우유 / 난류 / 밀 / 오징어",
+    "hot" : false,
+    "ice" : true
+}
+
+{
+    "menu" : "음료",
+    "category" : "기타 제조 음료",
+    "eng_name" : "Orange Floater with Reserve CB shot",
+    "name" : "오렌지 플로터 위드 리저브 CB 샷",
+    "description" : "[더종로R, 청담스타R 전용음료] 라임, 민트 그리고 리저브 콜드 브루 샷으로 스타벅스 리저브만의 색깔로 변주한 모히토 음료입니다.",
+    "price" : 5900,
+    "eng_category" : "Others",
+    "nutrition" : "'105', '0', '0', '0', '0', '5', '27', '60'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2021/02/[9200000000429]_20210225090138407.jpg",
+    "allergy" : "none",
+    "hot" : true,
+    "ice" : false
+}
+
+{
+    "menu" : "음료",
+    "category" : "기타 제조 음료",
+    "eng_name" : "Milk",
+    "name" : "우유",
+    "description" : "부드럽고 담백한 신선한 우유.",
+    "price" : 5900,
+    "eng_category" : "Others",
+    "nutrition" : "'240', '8', '12', '13', '0', '200', '18', '0'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2015/07/[18]_20150723002143240.jpg",
+    "allergy" : " 우유",
+    "hot" : true,
+    "ice" : false
+}
+
+{
+    "menu" : "음료",
+    "category" : "기타 제조 음료",
+    "eng_name" : "Jeju Black Sesame Latte",
+    "name" : "제주 까망 라떼",
+    "description" : "[제주지역 한정음료] 제주도의 돌담길과 하르방의 풍경을\n느낄 수 있는 음료로 고소한 흑임자와 달콤한 소보로 토핑으로 \n누구나 즐길 수 있는 음료",
+    "price" : 5900,
+    "eng_category" : "Others",
+    "nutrition" : "'225', '7', '10', '12', '0', '170', '18', '0'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2020/09/[9200000001301]_20200921171639786.jpg",
+    "allergy" : " 땅콩 / 대두 / 우유 / 난류 / 밀 / 오징어",
+    "hot" : true,
+    "ice" : false
+}
+
+{
+    "menu" : "음료",
+    "category" : "기타 제조 음료",
+    "eng_name" : "Jeju Mugwort Latte",
+    "name" : "제주 쑥쑥 라떼",
+    "description" : "[제주지역 한정음료] 제주의 푸릇푸릇한 쑥 향을 느끼며 \n건강과 힐링을 즐기는 음료로 제주의 오름길을 상징하는 음료. ",
+    "price" : 5900,
+    "eng_category" : "Others",
+    "nutrition" : "'425', '9', '16', '15', '0.2', '210', '50', '0'",
+    "image" : "https://image.istarbucks.co.kr/upload/store/skuimg/2020/09/[9200000002089]_20200921171510986.jpg",
+    "allergy" : " 대두 / 우유",
+    "hot" : true,
+    "ice" : false
+}
